@@ -15,7 +15,10 @@ public abstract class LazadoGep implements Urhajo{
             LazadoGep lg = (LazadoGep) urhajo;
             return lg.meghibasodhatE && lg.sebesseg < this.sebesseg;
         }
-        // millenium falcon feltétel
+        if (urhajo instanceof MilleniumFalcon) {
+            MilleniumFalcon mf = (MilleniumFalcon) urhajo;
+            return this.sebesseg > mf.milyengyors() * 2;
+        }
         return false;
     }
 
