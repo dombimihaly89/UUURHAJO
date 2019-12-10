@@ -1,5 +1,5 @@
 package hu.flowacademy;
 
-public interface Hiperhatomu {
+public interface Hiperhajtomu {
     public void HiperUgras();
 }
