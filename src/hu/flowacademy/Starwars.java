@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Starwars {
-    private static String testPath = "/home/jmezo/flow/starwars_file.txt";
+    private static String path = "/home/jmezo/flow/starwars_file.txt";
 
     public static void main(String[] args) {
         System.out.println("hello");
@@ -21,5 +21,7 @@ public class Starwars {
             String urhajo = scanner.nextLine();
             
         }
+
+
     }
 }
