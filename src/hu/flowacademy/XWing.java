@@ -9,11 +9,7 @@ public class XWing extends LazadoGep implements Hiperhajtomu {
 
     @Override
     public boolean elkapjaAVonosugar() {
-        if (this.isMeghibasodhatE() && this.getSebesseg() < 10000) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.isMeghibasodhatE() && this.getSebesseg() < 10000;
     }
 
 
