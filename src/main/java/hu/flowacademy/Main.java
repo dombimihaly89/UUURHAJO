@@ -2,9 +2,11 @@ package hu.flowacademy;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         System.out.println("hello");
+        dbTeszt();
     }
+
 
     public static void dbTeszt()  throws ClassNotFoundException {
         //  a db_info.txt-ben is benne vannak a mysql server adatai
