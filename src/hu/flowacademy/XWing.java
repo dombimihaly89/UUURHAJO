@@ -21,7 +21,7 @@ public class XWing extends LazadoGep implements Hiperhajtomu {
     @Override
     public void HiperUgras() {
         Random rnd = new Random();
-        this.setSebesseg(rnd.nextDouble() * 100);
+        this.setSebesseg(this.getSebesseg() + rnd.nextDouble() * 100);
 
     }
 }
