@@ -1,10 +1,14 @@
 package hu.flowacademy;
 
+import java.util.UUID;
+
 public class MilleniumFalcon implements Urhajo, Hiperhajtomu {
 
+    private UUID id;
     private double tapasztalat;
 
     public MilleniumFalcon() {
+        this.id = UUID.randomUUID();
         this.tapasztalat = 100;
     }
 
@@ -27,7 +31,28 @@ public class MilleniumFalcon implements Urhajo, Hiperhajtomu {
     @Override
     public String toString() {
         return "MilleniumFalcon{" +
-                "tapasztalat=" + tapasztalat +
+                "id=" + id.toString() +
+                ", tapasztalat=" + tapasztalat +
                 '}';
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public double getTapasztalat() {
+        return tapasztalat;
+    }
+
+    public void setTapasztalat(double tapasztalat) {
+        this.tapasztalat = tapasztalat;
+    }
+
+    public String getInsertSQL() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("INSERT INTO MilleniumFalcons (id, tapasztalat) VALUES (")
+                .append("'").append(this.id).append("', ")
+                .append("'").append(this.tapasztalat).append("')");
+        return sb.toString();
     }
 }
