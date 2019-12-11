@@ -35,6 +35,10 @@ public class XWing extends LazadoGep implements Hiperhajtomu {
         sb.append(param).append("';");
         return sb.toString();
     }
+    public String getSelectSQL() {
+        StringBuilder sb = new StringBuilder("SELECT id, sebesseg, MeghibasodhatE FROM XWing");
+        return sb.toString();
+    }
 
     public String getUpdateSQL(int seb, boolean hiba, String felt) {
         StringBuilder sb = new StringBuilder();

@@ -21,7 +21,7 @@ public class Main {
         // manager.executeSQL(xw.getInsertSQL());
         manager.executeSQL(xw.getUpdateSQL(111,true,id));
 
-        String query = manager.executeSQL(xw.getSelectSQL(id));;
+        String query = manager.executeSQL(xw.getSelectSQL());;
         ResultSet rs = st.executeQuery(query);
         while (rs.next()) {
             String azon = rs.getString(1);
