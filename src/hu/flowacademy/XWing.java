@@ -3,8 +3,8 @@ package hu.flowacademy;
 import java.util.Random;
 
 public class XWing extends LazadoGep implements Hiperhajtomu {
-    public XWing(double sebesseg, boolean meghibasodhatE) {
-        super(sebesseg = 150, meghibasodhatE = true);
+    public XWing() {
+        super(150, true);
     }
 
     @Override
@@ -21,7 +21,7 @@ public class XWing extends LazadoGep implements Hiperhajtomu {
     @Override
     public void HiperUgras() {
         Random rnd = new Random();
-        this.setSebesseg(rnd.nextDouble() * 100);
+        this.setSebesseg(this.getSebesseg() + rnd.nextDouble() * 100);
 
     }
 }

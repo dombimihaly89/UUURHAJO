@@ -1,13 +1,13 @@
-XWing
-XWing
-XWing
-XWing
-XWing
-XWing
-MilleniumFalcon
-MilleniumFalcon
-MilleniumFalcon
-MilleniumFalcon
-XWing
-XWing
-MilleniumFalcon
+XWing 2
+XWing 3
+XWing 1
+XWing 2
+XWing 3
+XWing 1
+MilleniumFalcon 3
+MilleniumFalcon 3
+MilleniumFalcon 2
+MilleniumFalcon 2
+XWing 1
+XWing 1
+MilleniumFalcon 2
