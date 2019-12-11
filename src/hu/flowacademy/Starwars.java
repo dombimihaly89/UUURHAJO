@@ -18,8 +18,13 @@ public class Starwars {
         File file = new File(path);
         Scanner scanner = new Scanner(path);
         while (scanner.hasNextLine()) {
+            int counter = 0;
             String urhajo = scanner.nextLine();
-            
+            String[] array = urhajo.split(" ");
+            if (array[0] == "XWing") {
+                list.add(new XWing());
+                list.get(0).
+            }
         }
 
 
