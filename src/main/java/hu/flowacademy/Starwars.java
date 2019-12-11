@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Starwars {
     private static String path = "starwars_file.txt";
-    private static List<Urhajo> list = new ArrayList<>();
+    private static List<Urhajo> list = new ArrayList<Urhajo>();
 
 
     public static void main(String[] args) throws FileNotFoundException {

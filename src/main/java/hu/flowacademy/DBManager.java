@@ -10,24 +10,29 @@ public class DBManager {
     private Connection conn = null;
     private Statement stmt = null;
     private static DBManager instance;
+
     private DBManager() throws ClassNotFoundException {
         Class.forName(JDBC_DRIVER);
     }
-    private void connect() throws SQLException {
-        conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+    public void connect() throws SQLException {
+        conn = DriverManager.getConnection(DB_URL, USER, PASS);
     }
+
     private void close() throws SQLException {
-        if(conn != null) {
+        if (conn != null) {
             conn.close();
         }
     }
+
     public static DBManager getInstance() throws ClassNotFoundException {
-        if(instance == null) {
+        if (instance == null) {
             instance = new DBManager();
         }
         return instance;
     }
-    public void executeSQL(String sql) {
+
+    public String executeSQL(String sql) {
         try {
             connect();
             stmt = conn.createStatement();
@@ -35,9 +40,10 @@ public class DBManager {
 
             stmt.close();
             close();
-        } catch(Exception ex) {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
+        return sql;
     }
 
     public void createSLQ() throws SQLException {
